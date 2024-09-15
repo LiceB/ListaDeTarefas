@@ -1,0 +1,60 @@
+<!-- <div class="task"
+  (dblclick)="onToggle(tarefa)"
+  [ngClass]="{reminder: tarefa.concluido}"
+>
+
+  <div *ngIf="!isEditing">
+    <h3>{{tarefa.tarefa}}</h3>
+  </div>
+
+  <div *ngIf="isEditing" class="d-flex align-items-center">
+    <input [(ngModel)]="tarefa.tarefa" type="text" class="form-control" />
+    <fa-icon [icon]="faCheck" [ngStyle]="{'color': 'green', 'font-size': '1.2rem', 'margin-left': '10px'}" (click)="onSaveEdit(tarefa)"></fa-icon>
+  </div>
+  
+  <p>{{tarefa.categoria}}</p>
+  
+  <div class="d-flex flex-column">
+    <fa-icon [icon]="faTimes" [ngStyle]="{'color': 'red'}" (click)="onDelete(tarefa)"></fa-icon>
+
+    <fa-icon *ngIf="!isEditing" [icon]="faPen" [ngStyle]="{'color': 'black', 'font-size': '0.8rem'}" (click)="onEdit()"></fa-icon>
+  </div>
+
+  <h3 *ngIf="!isEditing">{{tarefa.tarefa}}
+    <div class="d-flex flex-column">
+      <fa-icon [icon]="faTimes" [ngStyle]="{'color': 'red'}" (click)="onDelete(tarefa)"></fa-icon>
+
+      <fa-icon *ngIf="!isEditing" [icon]="faPen" [ngStyle]="{'color': 'black', 'font-size': '0.8rem'}" (click)="onEdit()"></fa-icon>
+      <fa-icon *ngIf="isEditing" [icon]="faCheck" [ngStyle]="{'color': 'green', 'font-size': '1.2rem', 'margin-left': '10px'}" (click)="onSaveEdit(tarefa)"></fa-icon>
+    </div>
+  </h3>
+  <input *ngIf="isEditing" [(ngModel)]="tarefa.tarefa" type="text" (blur)="onSaveEdit(tarefa)" class="form-control"/>
+  <p>{{tarefa.categoria}}</p>
+  
+</div> -->
+
+<div class="task"
+  (dblclick)="onToggle(tarefa)"
+  [ngClass]="{reminder: tarefa.concluido}"
+>
+  <!-- Exibir input de edição ou título da tarefa -->
+  <div *ngIf="!isEditing">
+    <h3>{{tarefa.tarefa}}
+      <div class="d-flex flex-column align-items-end">
+        <fa-icon [icon]="faTimes" [ngStyle]="{'color': 'red'}" (click)="onDelete(tarefa)"></fa-icon>
+        
+        <!-- Mostrar ícone de lápis se não estiver editando -->
+        <fa-icon *ngIf="!isEditing" [icon]="faPen" [ngStyle]="{'color': 'black', 'font-size': '1.2rem'}" (click)="onEdit()"></fa-icon>
+      </div>
+
+    </h3>
+  </div>
+  
+  <div *ngIf="isEditing" class="d-flex align-items-center">
+    <input [(ngModel)]="tarefa.tarefa" type="text" class="form-control" />
+    <fa-icon [icon]="faCheck" [ngStyle]="{'color': 'green', 'font-size': '1.2rem', 'margin-left': '10px'}" (click)="onSaveEdit(tarefa)"></fa-icon>
+  </div>
+
+  <p>{{tarefa.categoria}}</p>
+
+</div>

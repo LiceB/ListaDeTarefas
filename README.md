@@ -1,27 +1,71 @@
-# ListaDeTarefas
+<h1 align="center">Lista de Tarefas</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+![npm](https://img.shields.io/npm/v/angular)
 
-## Development server
+### Índice
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ - [Descrição do projeto](#descrição-do-projeto)
 
-## Code scaffolding
+ - [Funcionalidades](#funcionalidades)
+ 
+ - [Aplicação](#aplicação)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ - [Ferramentas utilizadas](#ferramentas-utilizadas)
 
-## Build
+ - [Acesso ao projeto](#acesso-ao-projeto)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ - [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
 
-## Running unit tests
+ - [Desenvolvedora](#desenvolvedora)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Descrição do projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<p align="justify">
+  Projeto desenvolvido para demonstrar todas as quatro oprações básicas do CRUD (Criar, Ler, Atualizar e Deletar).
 
-## Further help
+  O sistema permitirá o gerenciamento de tarefas diárias, podendo inserir, excluir e marcar como concluída.
+</p>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Funcionalidades
+
+:heavy_check_mark: `Funcionalidade 1:` Realizar o cadastro de novas tarefas através do botão "Abrir" para inserir o título e categoria.
+:heavy_check_mark: `Funcionalidade 2:` Listar todas as tarefas cadastradas.
+:heavy_check_mark: `Funcionalidade 3:` Marcar uma tarefa como concluída
+:heavy_check_mark: `Funcionalidade 4:` Excluir uma tarefa cadastrada.
+:heavy_check_mark: `Funcionalidade 5:` Editar uma tarefa cadastrada.
+
+## Aplicação
+
+<div align="center">
+  <!-- vídeo do sistema funcionando -->
+</div>
+
+## Ferramentas utilizadas
+<a href="https://angular.io/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angular/angular-original.svg" alt="angular" width="40" height="40"/></a>
+<a href="https://www.typescriptlang.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typeScript" width="40" height="40"/></a>
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img src="https://camo.githubusercontent.com/6647554cf19482c32acc6a6a3b8bd68b845fafabd474595e7e92dead3075c3ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667" alt="html" width="40" height="40"/></a>
+<a href="https://getbootstrap.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="css" height="40"/></a>
+<a href="https://nodejs.org/en/" target="_blank"><img src="https://www.stickersdevs.com.br/wp-content/uploads/2022/01/nodejs-logo-adesivo-sticker.png" alt="nodejs" width="50" height="50"/></a>
+<a href="https://expressjs.com/pt-br/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXgAuAwfMMDkwZScsLkBAeZ4GjyfB7GtIzcA&s" alt="expressjs" width="40" height="40"/></a>
+
+## Acesso ao projeto
+
+Você pode [acessar o código fonte do projeto](), [testa-lo]() ou [baixá-lo]()
+
+## Abrir e rodar o projeto
+
+Após baixar o projeto, você pode abrir com o `Visual Studio Code`. Para isso, na tela de Welcome clique em:
+
+- `Open Folder` (ou Abrir Pasta);
+- Selecione a pasta do projeto (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo);
+- Clique em `Select forder` (ou Selecionar pasta) para abrir o projeto.
+
+Com o projeto aberto, abra o terminal e execute os seguintes comandos em abas diferentes:
+- `npm install` (ou `yarn install`) para instalar as dependências do projeto
+- `ng serve` (ou `ng serve --open`) para iniciar o servidor e abrir o projeto
+- `json-server db.json` (ou `json-server db.json --port 3000`) para iniciar o servidor.
+
+## Desenvolvedora
+| [<img src="https://avatars.githubusercontent.com/u/63216833?v=4" width=115><br><sub>Alice Bianchi Nogueira</sub>](https://github.com/camilafernanda) |
+| :---: |
