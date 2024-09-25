@@ -1,6 +1,8 @@
 <h1 align="center">Lista de Tarefas</h1>
 
 ![npm](https://img.shields.io/npm/v/angular)
+![angular](https://img.shields.io/badge/angular-v17-blue)
+![node](https://img.shields.io/badge/node-v20-blue)
 
 ### Índice
 
@@ -42,7 +44,8 @@
 ## Aplicação
 
 <div align="center">
-  <!-- vídeo do sistema funcionando -->
+<img src="https://github.com/user-attachments/assets/90b8a3a9-868a-4f3a-9c6b-aa58db14ce6d" alt="funcionamento da lista de tarefas" width="650"/>
+
 </div>
 
 ## Ferramentas utilizadas
@@ -51,11 +54,10 @@
 <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img src="https://camo.githubusercontent.com/6647554cf19482c32acc6a6a3b8bd68b845fafabd474595e7e92dead3075c3ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667" alt="html" width="40" height="40"/></a>
 <a href="https://getbootstrap.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="css" height="40"/></a>
 <a href="https://nodejs.org/en/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/archive/d/d9/20160324173914%21Node.js_logo.svg" alt="nodejs" height="30"/></a>
-<a href="https://expressjs.com/pt-br/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"  height="30"/></a>
 
 ## Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto](https://github.com/LiceB/ListaDeTarefas)
+Você pode [acessar o código fonte do projeto](https://github.com/LiceB/ListaDeTarefas) ou [baixá-lo](https://github.com/LiceB/ListaDeTarefas/archive/refs/heads/main.zip)
 
 ## Abrir e rodar o projeto
 
@@ -71,5 +73,5 @@ Com o projeto aberto, abra o terminal e execute os seguintes comandos em abas di
 - `json-server db.json` (ou `json-server db.json --port 3000`) para iniciar o servidor.
 
 ## Desenvolvedora
-| [<img src="https://avatars.githubusercontent.com/u/63216833?v=4" width=115><br><sub>Alice Bianchi Nogueira</sub>](https://github.com/camilafernanda) |
+| [<img src="https://avatars.githubusercontent.com/u/63216833?v=4" width=115><br><sub>Alice Bianchi Nogueira</sub>](https://github.com/LiceB) |
 | :---: |
