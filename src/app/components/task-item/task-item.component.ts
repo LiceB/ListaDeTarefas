@@ -1,10 +1,11 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { Tarefa } from '../../../Tarefa';
 import { faPen, faTimes, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
 import { TaskService } from '../../services/task.service';
 import { FormsModule } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr'
 
 @Component({
   selector: 'app-task-item',
@@ -26,7 +27,7 @@ export class TaskItemComponent {
   faPen = faPen
   faCheck = faCheck
 
-  constructor(private taskService: TaskService) {}
+  constructor(private taskService: TaskService, private toastrService: ToastrService) {}
 
   onDelete(tarefa: Tarefa) {
     this.onDeleteTask.emit(tarefa)
@@ -39,7 +40,7 @@ export class TaskItemComponent {
   onSaveEdit(tarefa: Tarefa) {
     this.isEditing = false
     this.taskService.updateTask(tarefa).subscribe(() => {
-      alert('Tarefa atualizada com sucesso!');
+      this.toastrService.success('Alterado com sucesso', 'Success')
     })
   }
 
